@@ -72,13 +72,6 @@ Se compararon diferentes arquitecturas para optimizar la clasificación del PIB:
 ## Conclusiones y Recomendaciones
 
 
----
-
-## 📦 Requisitos de Instalación
-
-Para ejecutar este proyecto, asegúrate de tener instaladas las siguientes bibliotecas:
-
-pip install numpy pandas scikit-learn xgboost imbalanced-learn matplotlib seaborn
 
 ---
 
@@ -97,5 +90,15 @@ Autores:
 - Angela Torres - Autor principal
 - Laura Pabon - Autor principa
 Dario montoya - Autor principa
+
+---
+
+## 📦 Requisitos de Instalación
+
+Para ejecutar este proyecto, asegúrate de tener instaladas las siguientes bibliotecas:
+
+```bash
+pip install numpy pandas scikit-learn xgboost imbalanced-learn matplotlib seaborn
+
 
 
