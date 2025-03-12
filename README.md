@@ -79,8 +79,7 @@ Se compararon diferentes arquitecturas para optimizar la clasificación del PIB:
 Para ejecutar el proyecto, instala las siguientes dependencias:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn tensorflow keras shap
-'''
+pip install pandas numpy matplotlib seaborn scikit-learn tensorflow keras shap ```
 
 ---
 
