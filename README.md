@@ -74,18 +74,26 @@ Se compararon diferentes arquitecturas para optimizar la clasificación del PIB:
 
 ---
 
-## Requisitos de Instalación
+## 📦 Requisitos de Instalación
 
-Para ejecutar el proyecto, instala las siguientes dependencias:
+Para ejecutar este proyecto, asegúrate de tener instaladas las siguientes bibliotecas:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn tensorflow keras shap ```
+pip install numpy pandas scikit-learn xgboost imbalanced-learn matplotlib seaborn
 
 ---
 
-## Licencia
+## 👥 Autores
 
 Este proyecto fue desarrollado para IA Aplicada a la Economía – Período 2025-10.
-Autores: Dario montoya, Laura Pabon, Jennifer Sarabia, Angela Torres, Marcelo Yepes
 Profesor: Juan Camilo Vega.
 Institución: Universidad de los Andes.
+
+Autores:
+Marcelo Yepes - Autor principal
+Jennifer Sanabria - Autor principal
+Angela Torres - Autor principal
+Laura Pabon - Autor principa
+Dario montoya - Autor principa
+
+
