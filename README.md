@@ -85,14 +85,17 @@ pip install numpy pandas scikit-learn xgboost imbalanced-learn matplotlib seabor
 ## 👥 Autores
 
 Este proyecto fue desarrollado para IA Aplicada a la Economía – Período 2025-10.
+
 Profesor: Juan Camilo Vega.
+
 Institución: Universidad de los Andes.
 
 Autores:
-Marcelo Yepes - Autor principal
-Jennifer Sanabria - Autor principal
-Angela Torres - Autor principal
-Laura Pabon - Autor principa
+
+- Marcelo Yepes - Autor principal
+- Jennifer Sanabria - Autor principal
+- Angela Torres - Autor principal
+- Laura Pabon - Autor principa
 Dario montoya - Autor principa
 
 
