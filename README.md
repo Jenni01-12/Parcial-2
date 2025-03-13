@@ -89,7 +89,7 @@ Autores:
 - Jennifer Sanabria - Autor principal
 - Angela Torres - Autor principal
 - Laura Pabon - Autor principa
-Dario montoya - Autor principa
+- Dario montoya - Autor principa
 
 ---
 
