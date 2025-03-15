@@ -76,14 +76,54 @@ Se clasificó el PIB en tres categorías:
 ---
 
 ## Resultados y Análisis
+Se evaluaron dos modelos de redes neuronales:
+⿡ MLPClassifier de Scikit-learn
+⿢ Red neuronal profunda con TensorFlow
+
+Ambos modelos se usaron para predecir el nivel de PIB en tres categorías (Low, Medium, High GDP). Se aplicó búsqueda de hiperparámetros y se analizaron métricas clave como precisión, recall, F1-score y curvas ROC.
+
+📈 Resultados clave:
+
+MLPClassifier (Scikit-learn) alcanzó una precisión del 59%, destacando en la clase 0 (88% precisión, 83% recall), pero con un rendimiento bajo en la clase 2 (36% precisión, 22% recall).
+Red neuronal TensorFlow mostró un rendimiento similar en un escenario, pero en otro experimento logró 99% de precisión, lo que sugiere posible sobreajuste.
+Curvas ROC muestran que la clase 0 se clasifica mejor (AUC ≈ 0.87), mientras que la clase 2 tiene problemas (AUC ≈ 0.66).
+
+Análisis de Resultados
+1. MLPClassifier:
+Su mejor configuración: (32 neuronas, activación logistic, LR=0.05).
+Problema: El recall en la clase 2 es bajo, lo que indica que el modelo no identifica bien los países con alto PIB.
+
+2. Red Neuronal con TensorFlow:
+Un experimento mostró resultados realistas (57% precisión), mientras que otro alcanzó 99% de precisión, lo cual indica sobreajuste.
+El sobreajuste se evidencia en la pérdida de validación, que crece mientras la de entrenamiento sigue bajando.
+
+3. Tasa de aprendizaje fija:
+Gráficos muestran learning rate constante, lo que puede impedir mejor convergencia.
+
 
 
 ---
 
 ## Conclusiones y Recomendaciones
 
+1. El modelo de TensorFlow muestra sobreajuste extremo
+La matriz de confusión en entrenamiento es casi perfecta (99%+ de precisión), mientras que en prueba el rendimiento baja notablemente.
+Esto indica que el modelo memoriza los datos de entrenamiento pero no generaliza bien a datos nuevos.
+2. Problema de clasificación en clases "Medium" y "High"
+La clase "Low" se predice con alta precisión en ambos conjuntos.
+Las clases "Medium" y "High" se confunden constantemente, lo que sugiere falta de diferenciación en los datos o una distribución desbalanceada.
+3. El modelo de Scikit-learn es más estable pero menos potente
+MLPClassifier de Scikit-learn obtuvo 59% de precisión en prueba, con mejor balance entre clases.
+Sin embargo, su arquitectura es más simple y podría no capturar relaciones complejas en los datos.
 
+Recomendaciones:
+✅ Reducir la complejidad del modelo de TensorFlow para evitar memorizar datos de entrenamiento.
+✅ Agregar más regularización  para mejorar la capacidad de generalización.
+✅ Equilibrar las clases.
+✅ Usar learning rate decay para que el modelo aprenda de manera más estable.
+✅ Revisar la calidad de los datos y aplicar técnicas de preprocesamiento para mejorar la separación entre clases.
 
+🔹 Próximo paso: Ajustar el modelo de TensorFlow con las recomendaciones y evaluar nuevamente su desempeño. 🚀📊
 ---
 
 ## 👥 Autores
