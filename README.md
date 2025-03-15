@@ -55,12 +55,23 @@ Se clasificó el PIB en tres categorías:
 
 ## 🚀 Modelos Implementados
 
-📌 **Modelos de Redes Neuronales**  
-Se compararon diferentes arquitecturas para optimizar la clasificación del PIB:
+**Procesamiento de Datos**
 
-1️⃣ **Red Neuronal con Scikit-Learn**  
-2️⃣ **Red Neuronal Profunda con TensorFlow**  
-3️⃣ **Red con una mala configuración de función de pérdida**  
+- Se cargaron y limpiaron los datos de PIB y clasificación de países.
+- Se convirtió el problema en clasificación dividiendo el PIB en categorías (Low, Medium, High).
+- Se estandarizaron las variables numéricas y se aplicó encoding a las categóricas.
+  
+**Construcción de Modelos**
+
+- Se implementaron tres modelos de redes neuronales:
+- MLP con Scikit-Learn: Optimización de hiperparámetros.
+- MLP con TensorFlow: Modelo más profundo con tuning avanzado.
+- Experimento con mala función de pérdida: Uso incorrecto de MSE en clasificación.
+- 
+**Evaluación de Modelos**
+  
+- Se analizaron métricas como precisión, pérdida, matriz de confusión y curva ROC.
+- Se compararon los modelos en términos de desempeño y estabilidad.
 
 ---
 
